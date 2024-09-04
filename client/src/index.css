@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans");
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  min-height: 100vh;
+  background-color: #E1E8EE;
+  display: flex;
+  align-items: flex-start; /* 內容從上方開始排列 */
+  justify-content: center;
+  padding-top: 50px; /* 向上調整內容的位置 */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.form-structor {
+    background-color: #E1E8EE; /* 與背景顏色匹配 */
+    border-radius: 15px;
+    height: 550px;
+    width: 350px;
+    position: fixed; /* 固定位置 */
+    top: 20px; /* 調整到離頂部一定距離 */
+    left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+    display: flex; /* 添加彈性顯示 */
+    align-items: center; /* 垂直居中內容 */
+    justify-content: center; /* 水平居中內容 */
+}
+
+.signup {
+    position: relative; /* 調整定位 */
+    width: 65%;
+    transition: all .3s ease;
+}
+
+.signup .slide-up {
+    top: 0; /* 重置頂部位置 */
+    transform: none; /* 重置變換 */
+}
+
+.signup .form-title {
+    color: #333;
+    font-size: 1.7em;
+    text-align: center;
+    transition: all .3s ease;
+}
+
+.signup .form-title span {
+    color: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.signup .form-holder {
+    border-radius: 15px;
+    background-color: #fff;
+    overflow: hidden;
+    margin-top: 50px;
+}
+
+.signup .form-holder .input {
+    border: 0;
+    outline: none;
+    display: block;
+    height: 30px;
+    padding: 8px 15px;
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+    font-size: 12px;
+}
+
+.signup .form-holder .input:last-child {
+    border-bottom: 0;
+}
+
+.signup .form-holder .input::-webkit-input-placeholder {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.signup .submit-btn {
+    background-color: #4A90E2;
+    color: #fff;
+    border: 0;
+    border-radius: 15px;
+    display: block;
+    margin: 15px auto;
+    padding: 15px 45px;
+    width: 100%;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.signup .submit-btn:hover {
+    background-color: #357ABD;
+}
